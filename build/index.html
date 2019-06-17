@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Mon Jun 17 2019 22:07:11 GMT+0000 (UTC) -->
+ <!-- CREATED AT: Mon Jun 17 2019 22:19:18 GMT+0000 (UTC) -->
 
 <style>
 /* Hide when editing */
@@ -1490,6 +1490,53 @@ button.frb-submit.active:hover {
     font-size: 14px;
     color: #d33;
 }
+
+
+
+/* Colored style */
+.frb-message__left {
+    
+}
+.frb-message__title {
+    font-family: Georgia;
+    font-size: 34px;
+    color: #222222; 
+    padding-left: 24px;
+}
+.frb-message__text {
+    margin-top: 24px;
+    padding: 24px;
+    background: #F5F6FA;
+}
+.frb-message__p {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222222;
+}
+.frb-message__buttons {
+    margin-top: 24px;
+}
+.frb-button--reset {
+    
+}
+.frb-button--filled {
+    border-radius: 3px;
+    border: solid 1px #2d59b3;
+    background-color: #3366cc;
+    padding: 10px 22px;
+}
+.frb-button--blank {
+    font-family: Arial;
+    font-size: 14px;
+    color: #0645ad;
+    margin-left: 24px;
+}
+.frb-footer {
+    opacity: 0.4;
+    margin-top: 16px;
+}
+
 </style>
 
 <div class="frb-prevent-page-jump"></div>
@@ -1509,14 +1556,14 @@ button.frb-submit.active:hover {
                     <p class="frb-message__p">
                         We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about $15. This year, will you take one minute to keep our work going?
                     </p>
-                </div>
-                <div class="frb-message__buttons">
-                    <button class="frb-button--filled">
-                        I can help with $2.75 USD
-                    </button>
-                    <button class="frb-button--blank">
-                        Donate a different amount
-                    </button>
+                    <div class="frb-message__buttons">
+                        <button class="frb-button--filled">
+                            I can help with $2.75 USD
+                        </button>
+                        <button class="frb-button--blank">
+                            Donate a different amount
+                        </button>
+                    </div>
                 </div>
                 <div class="frb-footer">
                     {{MediaWiki:FundraisingBanners/SmallPrint-2017}}
