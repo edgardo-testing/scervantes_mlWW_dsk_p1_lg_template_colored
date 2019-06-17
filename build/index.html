@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Mon Jun 17 2019 22:56:04 GMT+0000 (UTC) -->
+ <!-- CREATED AT: Mon Jun 17 2019 23:03:44 GMT+0000 (UTC) -->
 
 <style>
 /* Hide when editing */
@@ -1495,7 +1495,11 @@ button.frb-submit.active:hover {
 
 
 /* Colored style */
+.frb-message {
+    display: table;
+}
 .frb-message__left {
+    display: table-cell;
     max-width: 930px;
 }
 .frb-message__title {
@@ -1541,6 +1545,16 @@ button.frb-submit.active:hover {
 .frb-button--blank {
     color: #0645ad;
     margin-left: 24px;
+}
+
+.frb-message__right {
+    display: table-cell;
+    width: 460px;
+}
+.frb-message__right-img {
+    width: 343px;
+    height: 262px;
+    background: lightgrey;
 }
 .frb-footer {
     opacity: 0.4;
