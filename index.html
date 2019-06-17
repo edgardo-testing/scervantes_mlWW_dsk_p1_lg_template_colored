@@ -309,7 +309,7 @@ body.rtl .frb-message-icon {
 /* -------------- Form -------------- */
 
 .frb-form {
-    display: table-cell;
+    display: none;
     position: relative;
     width: 25%;
     min-width: 320px;
@@ -1517,7 +1517,7 @@ button.frb-submit.active:hover {
             </div>
         </div><!--frb-message-->
 
-        <!-- <div class="frb-form">
+        <div class="frb-form">
 
             <div class="frb-buttons">
                 <span id="yes-button" class="banner-button" tabindex="0">Yes, I'll donate %MINIMUM%</span>
@@ -1713,18 +1713,7 @@ button.frb-submit.active:hover {
 
             </div>
 
-        </div> -->
-
-    <form class="frb-rml-form" id="frb-rml-form" method="post" action="https://www.pages04.net/wikimedia/remind/Form?sp_source={{{banner}}}" style="display: none;">
-        <input name="formSourceName" type="hidden" value="StandardForm">
-        <input name="sp_exp" type="hidden" value="yes">
-        <input name="rml_source" type="hidden" value="{{{banner}}}">
-        <input name="rml_group" type="hidden" value="dsk_lg">
-        <input name="rml_country" type="hidden" value>
-        <input name="rml_language" type="hidden" value>
-        <input name="rml_submitDate" type="hidden" value>
-        <input name="rml_segment" type="hidden" value>
-    </form>
+        </div>
 
     </div><!--frb-main-->
 
