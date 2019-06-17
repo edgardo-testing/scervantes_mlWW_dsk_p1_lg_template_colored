@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Mon Jun 17 2019 22:40:31 GMT+0000 (UTC) -->
+ <!-- CREATED AT: Mon Jun 17 2019 22:51:33 GMT+0000 (UTC) -->
 
 <style>
 /* Hide when editing */
@@ -58,7 +58,6 @@
 
 
     box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.17);
-    padding: 24px;
 }
 
 .frb--minimized,
@@ -88,6 +87,7 @@
     padding: 0;
     background-color: #FFFFFF;
     transition: background-color 0.5s ease;
+    padding: 24px;
 }
 
 body.rtl .frb-main {
@@ -1523,7 +1523,8 @@ button.frb-submit.active:hover {
     font-size: 14px;
 }
 .frb-button--icon {
-    margin-left: 12.5px
+    margin-left: 12.5px;
+    vertical-align: middle;
 }
 .frb-button--filled {
     color: white;
@@ -1573,9 +1574,9 @@ button.frb-submit.active:hover {
                             </svg>
 
                         </button>
-                        <button class="frb-button frb-button--blank">
+                        <a href="#" class="frb-button frb-button--blank">
                             Donate a different amount
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="frb-footer">
