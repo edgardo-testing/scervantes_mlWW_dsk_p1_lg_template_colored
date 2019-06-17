@@ -1492,7 +1492,11 @@ button.frb-submit.active:hover {
 
 
 /* Colored style */
+.frb-message {
+    display: table;
+}
 .frb-message__left {
+    display: table-cell;
     max-width: 930px;
 }
 .frb-message__title {
@@ -1538,6 +1542,16 @@ button.frb-submit.active:hover {
 .frb-button--blank {
     color: #0645ad;
     margin-left: 24px;
+}
+
+.frb-message__right {
+    display: table-cell;
+    width: 460px;
+}
+.frb-message__right-img {
+    width: 343px;
+    height: 262px;
+    background: lightgrey;
 }
 .frb-footer {
     opacity: 0.4;
