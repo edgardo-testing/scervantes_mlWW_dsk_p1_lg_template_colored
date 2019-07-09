@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Thu Jun 20 2019 13:53:19 GMT+0000 (UTC) -->
+ <!-- CREATED AT: Tue Jul 09 2019 03:39:59 GMT+0000 (UTC) -->
 
 <style>
 /* Hide when editing */
@@ -1349,7 +1349,7 @@ body.rtl .frb-checkbox {
     line-height: 1.2142857143; /*17px @14px*/
 }
 
-/*Donb t show RML when fixed and expanded*/
+/*Don’t show RML when fixed and expanded*/
 .frb--fixed .frb-rml {
     display: none;
 }
@@ -1512,6 +1512,7 @@ button.frb-submit.active:hover {
 }
 .frb-message__title--you {
     color: #545dd8;
+    position: relative;
 }
 .frb-message__text {
     margin-top: 24px;
@@ -1569,6 +1570,23 @@ button.frb-submit.active:hover {
     margin-top: 16px;
     padding-left: 16px;
 }
+.frb-message__bottom-left-ornament {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+}
+.frb-message__bottom-right-ornament {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 186px;
+}
+.frb-message__title--you-ornament {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+}
 
 </style>
 
@@ -1583,8 +1601,11 @@ button.frb-submit.active:hover {
         </div>
 
         <div class="frb-message">
+            <img class="frb-message__bottom-left-ornament" src="https://upload.wikimedia.org/wikipedia/donate/d/dd/Frb-bottom-left-ornament.jpg">
+            <img class="frb-message__bottom-right-ornament" src="https://upload.wikimedia.org/wikipedia/donate/d/dd/Frb-bottom-right-ornament.jpg">
+
             <div class="frb-message__left">
-                <span class="frb-message__title">Readers like <span class="frb-message__title--you">you</span> keep Wikipedia alive with your donations.</span>
+                <span class="frb-message__title">Readers like <span class="frb-message__title--you">you <img class="frb-message__title--you-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span> keep Wikipedia alive with your donations.</span>
                 <div class="frb-message__text">
                     <p class="frb-message__p">
                         We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about $15. This year, will you take one minute to keep our work going?
@@ -1607,7 +1628,7 @@ button.frb-submit.active:hover {
                 </div>
             </div>
             <div class="frb-message__right">
-                <img src="#" alt="" class="frb-message__right-img">
+                <img class="frb-message__right-img" src="https://upload.wikimedia.org/wikipedia/donate/1/11/Frb-donate-animation.gif" alt>
             </div>
             <div class="frb-message-inner">
                 <p class="frb-message__maximized">
@@ -2207,7 +2228,7 @@ console.debug('SCROLL POS 0');
         $('body').off('click keypress', '.frb--minimized');
     };
 
-    // The nagb s yes/no functionality
+    // The nag’s yes/no functionality
     $('#yes-button').on('click keypress', function(e) {
         if (e.which === 13 || e.type === 'click') {
             frb.clickedYes(e);
