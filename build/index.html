@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: Fri Jul 19 2019 18:36:33 GMT-0500 (Central Daylight Time) -->
+ <!-- CREATED AT: Fri Jul 19 2019 18:40:22 GMT-0500 (Central Daylight Time) -->
 
 <style>
 /* Hide when editing */
@@ -1756,7 +1756,14 @@ button.frb-submit.active:hover {
     }
 }
 
+@media (max-width: 970px) {
+    .frb--in-article .frb-message__title{
+        width: 75%;
+    }
+}
 
+
+/* Responsive minimized */
 @media (max-width: 1270px) {
     .frb--minimized .frb-message__left {
         /* max-width: 730px; responsive without decrease font size */
