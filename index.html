@@ -259,36 +259,36 @@ body.rtl .frb-message-icon {
 }
 
 .frb-message-inner {
-    display: none;
+    /* display: none; */
     position: relative;
     z-index: 1;
-    background-color: #f8f9fa;
-    border: 6px solid #900;
-    padding: 12px 18px 14px;
+    /* background-color: #f8f9fa; */
+    /* border: 6px solid #900; */
+    /* padding: 12px 18px 14px; */
 }
 
 @media all and (min-width: 1100px) {
-    .frb-message-inner {
+    /* .frb-message-inner {
         padding: 15px 26px 19px;
-    }
+    } */
 }
 
-.frb--minimized .frb-message-inner {
+/* .frb--minimized .frb-message-inner {
     padding: 12px 18px;
     font-size: 14px;
-}
+} */
 
 @media (min-width: 1100px) {
-    .frb--minimized .frb-message-inner {
+    /* .frb--minimized .frb-message-inner {
         font-size: 16px;
-    }
+    } */
 }
 
 @media (min-width: 1400px) {
-    .frb--minimized .frb-message-inner {
+    /* .frb--minimized .frb-message-inner {
         padding: 16px 26px;
         font-size: inherit;
-    }
+    } */
 }
 
 .frb--minimized .frb-form {
@@ -345,7 +345,7 @@ body.rtl .frb-message-icon {
 }
 
 /*Triangle*/
-.frb--minimized .frb-message-inner:before {
+/* .frb--minimized .frb-message-inner:before {
     position: absolute;
     top: 50%;
     right: -26px;
@@ -354,15 +354,15 @@ body.rtl .frb-message-icon {
     border: 10px solid transparent;
     border-left-color: #900;
     pointer-events: none;
-}
+} */
 
 /*RTL Triangle*/
-body.rtl .frb--minimized .frb-message-inner:before {
+/* body.rtl .frb--minimized .frb-message-inner:before {
     border-left-color: transparent;
     border-right-color: #900;
     right: auto;
     left: -26px;
-}
+} */
 
 /*Triangle in article and fixed expanded state*/
 
@@ -1860,77 +1860,78 @@ button.frb-submit.active:hover {
         </div>
 
         <div class="frb-message">
-            <img class="frb-message__bottom-left-ornament" src="https://upload.wikimedia.org/wikipedia/donate/d/dd/Frb-bottom-left-ornament.jpg">
-            <img class="frb-message__bottom-right-ornament" src="https://upload.wikimedia.org/wikipedia/donate/5/5c/Frb-bottom-right-ornament.jpg">
-            
-            <div class="frb-message__title">Readers like <span class="frb-message__title--you">you <img class="frb-message__title--you-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span> keep <span class="frb-message__title--wikipedia">Wikipedia</span> alive with your donations.</div>
+            <div class="frb-message-inner">
 
-            <div class="frb-message__container">
-                <div class="frb-message__left">
-                    <div class="frb-message__text">
-                        <p class="frb-message__p frb-message__maximized">
-                            We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about %AVERAGE%. This year, will you take one minute to keep our work going?
-                        </p>
-                        <div class="frb-message__buttons">
-                            <a class="frb-button frb-button--filled" id="frb-button__icanhelp" href="#">
-                                <span class="frb-button__span">I can help with %MINIMUM% <span class="frb-replace-currencycode"></span></span>
-                                <svg class="frb-button--icon" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
-                                    <path fill="#FFF" fill-rule="nonzero" d="M17.758 6.746l-5.36-5.68a1.035 1.035 0 0 0-.981-.308c-.36.078-.648.34-.756.686a.984.984 0 0 0 .237.982l3.135 3.32H1.301a1.019 1.019 0 0 0-.895.496.974.974 0 0 0 0 1.008c.185.313.526.502.895.496h12.732l-3.135 3.32a.984.984 0 0 0-.237.983c.108.346.397.608.756.686.36.078.735-.041.98-.309l5.361-5.68z"></path>
-                                </svg>
+                <!-- Maximized -->
+                <div class="frb-message__maximized">
+                    <img class="frb-message__bottom-left-ornament" src="https://upload.wikimedia.org/wikipedia/donate/d/dd/Frb-bottom-left-ornament.jpg">
+                    <img class="frb-message__bottom-right-ornament" src="https://upload.wikimedia.org/wikipedia/donate/5/5c/Frb-bottom-right-ornament.jpg">
+                    
+                    <div class="frb-message__title">Readers like <span class="frb-message__title--you">you <img class="frb-message__title--you-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span> keep <span class="frb-message__title--wikipedia">Wikipedia</span> alive with your donations.</div>
 
-                            </a>
-                            <a class="frb-button frb-button--blank" id="frb-button__donatedifferent" href="#">
-                                Donate a different amount
-                            </a>
-                        </div>
-                    </div>
-                    <div class="frb-footer">
-                        {{MediaWiki:FundraisingBanners/SmallPrint-2017}}
-                    </div>
-                </div>
-                <div class="frb-message__right">
-                    <img class="frb-message__right-img" src="https://upload.wikimedia.org/wikipedia/donate/1/11/Frb-donate-animation.gif" alt>
-                </div>
-                <div class="frb-message-inner">
-                    <p class="frb-message__maximized">
-                        <svg class="frb-message-icon" role="img" aria-labelledby="frb-message-icon-title" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><title id="frb-message-icon-title">Information icon</title><g fill-rule="nonzero" fill="none"><circle fill="#900" cx="10.492" cy="14.492" r="10.492"></circle><path d="M12.681 11.754l-2.267 7.864c-.125.45-.188.745-.188.885 0 .08.033.156.1.226.066.07.136.105.21.105.125 0 .25-.055.376-.165.332-.273.73-.767 1.194-1.482l.376.22c-1.113 1.94-2.296 2.91-3.55 2.91-.48 0-.86-.135-1.144-.404a1.349 1.349 0 0 1-.426-1.023c0-.273.062-.62.188-1.04l1.537-5.286c.147-.51.221-.892.221-1.15a.566.566 0 0 0-.21-.432c-.14-.125-.332-.188-.575-.188-.11 0-.243.004-.398.011l.144-.442 3.749-.609h.663zm-.685-5.087c.457 0 .842.159 1.156.475.313.318.47.701.47 1.15 0 .45-.16.834-.476 1.15-.317.318-.7.476-1.15.476-.443 0-.822-.158-1.14-.475a1.566 1.566 0 0 1-.475-1.15c0-.45.157-.833.47-1.15a1.549 1.549 0 0 1 1.145-.476z" fill="#FFF"></path></g></svg>
-                        <span class="frb-greeting">
-                            To all our readers in <span class="frb-replace-countryname">COUNTRY</span>,
-                        </span>
-                        It's a little awkward, so we'll get straight to the point: This <span class="frb-replace-dayofweek"></span> we humbly ask you to defend Wikipedia's independence. We depend on donations averaging about %AVERAGE%, and only ask you for one gift a year. But most of our readers in <span class="frb-replace-countryname">COUNTRY</span> are not responding to our messages, and time is running out to help in 2018. <span class="frb-highlight">If everyone reading this gave %MINIMUM%, we could keep Wikipedia thriving for years to come.</span> The price of your <span class="frb-replace-dayofweek"></span> coffee is all we need. People warned us not to make Wikipedia a non-profit. But if Wikipedia were commercial, it would be a great loss. Wikipedia unites all of us who love knowledge: contributors, readers and the donors who keep us thriving. The heart of Wikipedia is a community of people working to bring you unlimited access to reliable information. Please take a minute to keep Wikipedia growing. Thank you.
-                    </p>
-                    <p class="frb-message__minimized">
-                        
-                        <div class="frb-message__container">
-                            <div class="frb-message__left">
-                                <div class="frb-message__title">Readers like <span class="frb-message__title--you">you <img class="frb-message__title--you-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span> keep <span class="frb-message__title--wikipedia">Wikipedia</span> alive with your donations.</div>
-                                <div class="frb-message__text">
-                                    <p class="frb-message__p frb-message__maximized">
-                                        We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about %AVERAGE%. This year, will you take one minute to keep our work going?
-                                    </p>
-                                    <div class="frb-message__buttons">
-                                        <a class="frb-button frb-button--filled" id="frb-button__icanhelp" href="#">
-                                            <span class="frb-button__span">I can help with %MINIMUM% <span class="frb-replace-currencycode"></span></span>
-                                            <svg class="frb-button--icon" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
-                                                <path fill="#FFF" fill-rule="nonzero" d="M17.758 6.746l-5.36-5.68a1.035 1.035 0 0 0-.981-.308c-.36.078-.648.34-.756.686a.984.984 0 0 0 .237.982l3.135 3.32H1.301a1.019 1.019 0 0 0-.895.496.974.974 0 0 0 0 1.008c.185.313.526.502.895.496h12.732l-3.135 3.32a.984.984 0 0 0-.237.983c.108.346.397.608.756.686.36.078.735-.041.98-.309l5.361-5.68z"></path>
-                                            </svg>
+                    <div class="frb-message__container">
+                        <div class="frb-message__left">
+                            <div class="frb-message__text">
+                                <p class="frb-message__p frb-message__maximized">
+                                    We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about %AVERAGE%. This year, will you take one minute to keep our work going?
+                                </p>
+                                <div class="frb-message__buttons">
+                                    <a class="frb-button frb-button--filled" id="frb-button__icanhelp" href="#">
+                                        <span class="frb-button__span">I can help with %MINIMUM% <span class="frb-replace-currencycode"></span></span>
+                                        <svg class="frb-button--icon" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
+                                            <path fill="#FFF" fill-rule="nonzero" d="M17.758 6.746l-5.36-5.68a1.035 1.035 0 0 0-.981-.308c-.36.078-.648.34-.756.686a.984.984 0 0 0 .237.982l3.135 3.32H1.301a1.019 1.019 0 0 0-.895.496.974.974 0 0 0 0 1.008c.185.313.526.502.895.496h12.732l-3.135 3.32a.984.984 0 0 0-.237.983c.108.346.397.608.756.686.36.078.735-.041.98-.309l5.361-5.68z"></path>
+                                        </svg>
 
-                                        </a>
-                                        <a class="frb-button frb-button--blank" id="frb-button__donatedifferent" href="#">
-                                            Donate a different amount
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="frb-footer">
-                                    {{MediaWiki:FundraisingBanners/SmallPrint-2017}}
+                                    </a>
+                                    <a class="frb-button frb-button--blank" id="frb-button__donatedifferent" href="#">
+                                        Donate a different amount
+                                    </a>
                                 </div>
                             </div>
-                            <div class="frb-message__right">
-                                <img class="frb-message__right-img" src="https://upload.wikimedia.org/wikipedia/donate/1/11/Frb-donate-animation.gif" alt>
+                            <div class="frb-footer">
+                                {{MediaWiki:FundraisingBanners/SmallPrint-2017}}
                             </div>
                         </div>
+                        <div class="frb-message__right">
+                            <img class="frb-message__right-img" src="https://upload.wikimedia.org/wikipedia/donate/1/11/Frb-donate-animation.gif" alt>
+                        </div>
+                    </div>
+                </div>
 
-                    </p>
+                <!-- Maximized -->
+                <div class="frb-message__maximized">
+                    <img class="frb-message__bottom-left-ornament" src="https://upload.wikimedia.org/wikipedia/donate/d/dd/Frb-bottom-left-ornament.jpg">
+                    <img class="frb-message__bottom-right-ornament" src="https://upload.wikimedia.org/wikipedia/donate/5/5c/Frb-bottom-right-ornament.jpg">
+                    
+                    <div class="frb-message__title">Readers like <span class="frb-message__title--you">you <img class="frb-message__title--you-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span> keep <span class="frb-message__title--wikipedia">Wikipedia</span> alive with your donations.</div>
+
+                    <div class="frb-message__container">
+                        <div class="frb-message__left">
+                            <div class="frb-message__text">
+                                <p class="frb-message__p frb-message__maximized">
+                                    We're a nonprofit. We're independent. We don't run ads or sell services to our readers. Though our size requires us to maintain the server space and programming power of a top site, we are sustained by the support of donors like you who give an average of about %AVERAGE%. This year, will you take one minute to keep our work going?
+                                </p>
+                                <div class="frb-message__buttons">
+                                    <a class="frb-button frb-button--filled" id="frb-button__icanhelp" href="#">
+                                        <span class="frb-button__span">I can help with %MINIMUM% <span class="frb-replace-currencycode"></span></span>
+                                        <svg class="frb-button--icon" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
+                                            <path fill="#FFF" fill-rule="nonzero" d="M17.758 6.746l-5.36-5.68a1.035 1.035 0 0 0-.981-.308c-.36.078-.648.34-.756.686a.984.984 0 0 0 .237.982l3.135 3.32H1.301a1.019 1.019 0 0 0-.895.496.974.974 0 0 0 0 1.008c.185.313.526.502.895.496h12.732l-3.135 3.32a.984.984 0 0 0-.237.983c.108.346.397.608.756.686.36.078.735-.041.98-.309l5.361-5.68z"></path>
+                                        </svg>
+
+                                    </a>
+                                    <a class="frb-button frb-button--blank" id="frb-button__donatedifferent" href="#">
+                                        Donate a different amount
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="frb-footer">
+                                {{MediaWiki:FundraisingBanners/SmallPrint-2017}}
+                            </div>
+                        </div>
+                        <div class="frb-message__right">
+                            <img class="frb-message__right-img" src="https://upload.wikimedia.org/wikipedia/donate/1/11/Frb-donate-animation.gif" alt>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!--frb-message -->
