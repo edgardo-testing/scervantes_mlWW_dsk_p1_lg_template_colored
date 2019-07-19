@@ -56,7 +56,7 @@
     font-weight: 500;
     font-style: normal; /* needed for uk.wikipedia */
 
-
+    padding: 0;
     box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.17);
     overflow: hidden;
 }
@@ -1786,6 +1786,9 @@ button.frb-submit.active:hover {
 }
 
 @media (max-width: 1162px) {
+    .frb--minimized .frb-message__title {
+        font-size: 23px;
+    }
     .frb--minimized .frb-message__left {
         max-width: initial;
         width: auto;
@@ -1800,6 +1803,12 @@ button.frb-submit.active:hover {
     .frb--minimized .frb-message__right-img {
         height: auto;
         width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .frb--minimized .frb-message__right {
+        width: 120px;
     }
 }
 
